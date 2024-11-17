@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 13 Vite</title>
+</head>
+<body class="bg-secondary">
+    <h1 class="text-center pt-3">Week 12 Assignment</h1> <hr>
+
+    <div id="view" class="m-2">
+        <button onclick="onFetchAlbumClick()" type="button" id="viewButton" class="btn btn-success">View Albums</button>
+        <div id="albumsContainer">
+
+        </div>
+    </div>
+
+    <div id="create" class="m-2">
+        <input type="text" class="mb-2" id="createAlbum" placeholder="Album to Create"> <br>
+        <input type="text" class="mb-2" id="createArtist" placeholder="Album artist"> <br>
+        <input type="text" class="mb-2" id="createGenre" placeholder="Album genre"> <br>
+        <p>Genre key: 1 = Rock, 2 = Hip Hop, 3 = Electronic</p>
+        <button onclick="onCreateAlbumClick()" type="button" id="createButton" class="btn btn-primary">Create Album</button>
+    </div>
+
+    <div id="delete" class="m-2">
+        <input type="text" class="mb-2" id="inputDelete" placeholder="ID# of album to Delete"> <br>
+        <button onclick="onDeleteAlbumClick()" type="button" id="deleteButton" class="btn btn-danger">Delete Album</button>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
